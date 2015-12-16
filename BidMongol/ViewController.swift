@@ -7,11 +7,31 @@
 //
 
 import UIKit
+import Parse
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let order = PFObject(className: "Order")
+        order.setObject(1337, forKey: "score")
+        order.setObject("Sean Plott", forKey: "playerName")
+        
+
+        order.saveInBackgroundWithBlock () {
+            (success, error) in
+            if success {
+                NSLog("Object created with id: (gameScore.objectId)")
+            } else {
+                NSLog("%@", error!)
+            }
+        }
+        
+        
+
+
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
