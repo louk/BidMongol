@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        /*
+        
         let order = PFObject(className: "Order")
         order.setObject(1337, forKey: "score")
         order.setObject("Sean Plott", forKey: "playerName")
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
             }
         }
         
-        */
+
         
 
 
