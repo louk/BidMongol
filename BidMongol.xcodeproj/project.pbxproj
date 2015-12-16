@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F4604DF1C21086F004EF368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4604DE1C21086F004EF368 /* AppDelegate.swift */; };
+		9F4604E11C21086F004EF368 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4604E01C21086F004EF368 /* ViewController.swift */; };
+		9F4604E41C21086F004EF368 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4604E21C21086F004EF368 /* Main.storyboard */; };
+		9F4604E61C21086F004EF368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F4604E51C21086F004EF368 /* Assets.xcassets */; };
+		9F4604E91C21086F004EF368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4604E71C21086F004EF368 /* LaunchScreen.storyboard */; };
+		9F4604F41C210870004EF368 /* BidMongolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4604F31C210870004EF368 /* BidMongolTests.swift */; };
+		9F4604FF1C210870004EF368 /* BidMongolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4604FE1C210870004EF368 /* BidMongolUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F4604F01C210870004EF368 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F4604D31C21086F004EF368 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F4604DA1C21086F004EF368;
+			remoteInfo = BidMongol;
+		};
+		9F4604FB1C210870004EF368 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F4604D31C21086F004EF368 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F4604DA1C21086F004EF368;
+			remoteInfo = BidMongol;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9F4604DB1C21086F004EF368 /* BidMongol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BidMongol.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F4604DE1C21086F004EF368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F4604E01C21086F004EF368 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F4604E31C21086F004EF368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F4604E51C21086F004EF368 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F4604E81C21086F004EF368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F4604EA1C21086F004EF368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F4604EF1C210870004EF368 /* BidMongolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BidMongolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F4604F31C210870004EF368 /* BidMongolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidMongolTests.swift; sourceTree = "<group>"; };
+		9F4604F51C210870004EF368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F4604FA1C210870004EF368 /* BidMongolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BidMongolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F4604FE1C210870004EF368 /* BidMongolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidMongolUITests.swift; sourceTree = "<group>"; };
+		9F4605001C210870004EF368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F4604D81C21086F004EF368 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F4604EC1C210870004EF368 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F4604F71C210870004EF368 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F4604D21C21086F004EF368 = {
+			isa = PBXGroup;
+			children = (
+				9F4604DD1C21086F004EF368 /* BidMongol */,
+				9F4604F21C210870004EF368 /* BidMongolTests */,
+				9F4604FD1C210870004EF368 /* BidMongolUITests */,
+				9F4604DC1C21086F004EF368 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F4604DC1C21086F004EF368 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F4604DB1C21086F004EF368 /* BidMongol.app */,
+				9F4604EF1C210870004EF368 /* BidMongolTests.xctest */,
+				9F4604FA1C210870004EF368 /* BidMongolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F4604DD1C21086F004EF368 /* BidMongol */ = {
+			isa = PBXGroup;
+			children = (
+				9F4604DE1C21086F004EF368 /* AppDelegate.swift */,
+				9F4604E01C21086F004EF368 /* ViewController.swift */,
+				9F4604E21C21086F004EF368 /* Main.storyboard */,
+				9F4604E51C21086F004EF368 /* Assets.xcassets */,
+				9F4604E71C21086F004EF368 /* LaunchScreen.storyboard */,
+				9F4604EA1C21086F004EF368 /* Info.plist */,
+			);
+			path = BidMongol;
+			sourceTree = "<group>";
+		};
+		9F4604F21C210870004EF368 /* BidMongolTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F4604F31C210870004EF368 /* BidMongolTests.swift */,
+				9F4604F51C210870004EF368 /* Info.plist */,
+			);
+			path = BidMongolTests;
+			sourceTree = "<group>";
+		};
+		9F4604FD1C210870004EF368 /* BidMongolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9F4604FE1C210870004EF368 /* BidMongolUITests.swift */,
+				9F4605001C210870004EF368 /* Info.plist */,
+			);
+			path = BidMongolUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F4604DA1C21086F004EF368 /* BidMongol */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F4605031C210870004EF368 /* Build configuration list for PBXNativeTarget "BidMongol" */;
+			buildPhases = (
+				9F4604D71C21086F004EF368 /* Sources */,
+				9F4604D81C21086F004EF368 /* Frameworks */,
+				9F4604D91C21086F004EF368 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BidMongol;
+			productName = BidMongol;
+			productReference = 9F4604DB1C21086F004EF368 /* BidMongol.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F4604EE1C210870004EF368 /* BidMongolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F4605061C210870004EF368 /* Build configuration list for PBXNativeTarget "BidMongolTests" */;
+			buildPhases = (
+				9F4604EB1C210870004EF368 /* Sources */,
+				9F4604EC1C210870004EF368 /* Frameworks */,
+				9F4604ED1C210870004EF368 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F4604F11C210870004EF368 /* PBXTargetDependency */,
+			);
+			name = BidMongolTests;
+			productName = BidMongolTests;
+			productReference = 9F4604EF1C210870004EF368 /* BidMongolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9F4604F91C210870004EF368 /* BidMongolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F4605091C210870004EF368 /* Build configuration list for PBXNativeTarget "BidMongolUITests" */;
+			buildPhases = (
+				9F4604F61C210870004EF368 /* Sources */,
+				9F4604F71C210870004EF368 /* Frameworks */,
+				9F4604F81C210870004EF368 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F4604FC1C210870004EF368 /* PBXTargetDependency */,
+			);
+			name = BidMongolUITests;
+			productName = BidMongolUITests;
+			productReference = 9F4604FA1C210870004EF368 /* BidMongolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F4604D31C21086F004EF368 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Naranbayar Tsogbadrakh";
+				TargetAttributes = {
+					9F4604DA1C21086F004EF368 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					9F4604EE1C210870004EF368 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 9F4604DA1C21086F004EF368;
+					};
+					9F4604F91C210870004EF368 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 9F4604DA1C21086F004EF368;
+					};
+				};
+			};
+			buildConfigurationList = 9F4604D61C21086F004EF368 /* Build configuration list for PBXProject "BidMongol" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F4604D21C21086F004EF368;
+			productRefGroup = 9F4604DC1C21086F004EF368 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F4604DA1C21086F004EF368 /* BidMongol */,
+				9F4604EE1C210870004EF368 /* BidMongolTests */,
+				9F4604F91C210870004EF368 /* BidMongolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F4604D91C21086F004EF368 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F4604E91C21086F004EF368 /* LaunchScreen.storyboard in Resources */,
+				9F4604E61C21086F004EF368 /* Assets.xcassets in Resources */,
+				9F4604E41C21086F004EF368 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F4604ED1C210870004EF368 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F4604F81C210870004EF368 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F4604D71C21086F004EF368 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F4604E11C21086F004EF368 /* ViewController.swift in Sources */,
+				9F4604DF1C21086F004EF368 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F4604EB1C210870004EF368 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F4604F41C210870004EF368 /* BidMongolTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F4604F61C210870004EF368 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F4604FF1C210870004EF368 /* BidMongolUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F4604F11C210870004EF368 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F4604DA1C21086F004EF368 /* BidMongol */;
+			targetProxy = 9F4604F01C210870004EF368 /* PBXContainerItemProxy */;
+		};
+		9F4604FC1C210870004EF368 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F4604DA1C21086F004EF368 /* BidMongol */;
+			targetProxy = 9F4604FB1C210870004EF368 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9F4604E21C21086F004EF368 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F4604E31C21086F004EF368 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9F4604E71C21086F004EF368 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F4604E81C21086F004EF368 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F4605011C210870004EF368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F4605021C210870004EF368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F4605041C210870004EF368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BidMongol/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bidmongol.BidMongol;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9F4605051C210870004EF368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BidMongol/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bidmongol.BidMongol;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9F4605071C210870004EF368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BidMongolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bidmongol.BidMongolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BidMongol.app/BidMongol";
+			};
+			name = Debug;
+		};
+		9F4605081C210870004EF368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BidMongolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bidmongol.BidMongolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BidMongol.app/BidMongol";
+			};
+			name = Release;
+		};
+		9F46050A1C210870004EF368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BidMongolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bidmongol.BidMongolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BidMongol;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9F46050B1C210870004EF368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BidMongolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bidmongol.BidMongolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BidMongol;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F4604D61C21086F004EF368 /* Build configuration list for PBXProject "BidMongol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F4605011C210870004EF368 /* Debug */,
+				9F4605021C210870004EF368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F4605031C210870004EF368 /* Build configuration list for PBXNativeTarget "BidMongol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F4605041C210870004EF368 /* Debug */,
+				9F4605051C210870004EF368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9F4605061C210870004EF368 /* Build configuration list for PBXNativeTarget "BidMongolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F4605071C210870004EF368 /* Debug */,
+				9F4605081C210870004EF368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9F4605091C210870004EF368 /* Build configuration list for PBXNativeTarget "BidMongolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F46050A1C210870004EF368 /* Debug */,
+				9F46050B1C210870004EF368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F4604D31C21086F004EF368 /* Project object */;
+}
