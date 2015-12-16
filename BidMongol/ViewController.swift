@@ -10,13 +10,15 @@ import UIKit
 import Parse
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var logo: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+
         
         let order = PFObject(className: "Order")
+        
         order.setObject(1337, forKey: "score")
         order.setObject("Sean Plott", forKey: "playerName")
         
@@ -30,11 +32,6 @@ class ViewController: UIViewController {
             }
         }
         
-
-        
-
-
-        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -43,6 +40,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func siginInAction(sender: AnyObject) {
+        
+        NSLog("hello")
+    }
 
 }
 
