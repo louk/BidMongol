@@ -36,8 +36,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Uncomment the line inside ParseStartProject-Bridging-Header and the following line here:
         // PFFacebookUtils.initializeFacebook()
         // ****************************************************************************
-        
+
         PFUser.enableAutomaticUser()
+        
+        var storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        var initialViewController: UIViewController
+        
+
+        if (PFUser.currentUser() == nil) {
+           
+                initialViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Register")
+            
+        }
+        else {
+                initialViewController = storyboard.instantiateViewControllerWithIdentifier("Login")
+                
+        }
+            
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
+            
         
         let defaultACL = PFACL();
         

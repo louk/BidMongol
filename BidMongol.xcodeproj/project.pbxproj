@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F1A8CAF1C2174ED00FDE0BC /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F1A8CAE1C2174ED00FDE0BC /* 11.png */; };
+		9F15C38E1C2364DA0026CC62 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F15C38D1C2364DA0026CC62 /* LoginViewController.swift */; };
+		9F15C38F1C2364DA0026CC62 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F15C38D1C2364DA0026CC62 /* LoginViewController.swift */; };
+		9F15C3901C2364DA0026CC62 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F15C38D1C2364DA0026CC62 /* LoginViewController.swift */; };
+		9F15C3971C236D7A0026CC62 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F15C3961C236D7A0026CC62 /* RegisterViewController.swift */; };
+		9F15C3981C236D7A0026CC62 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F15C3961C236D7A0026CC62 /* RegisterViewController.swift */; };
+		9F15C3991C236D7A0026CC62 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F15C3961C236D7A0026CC62 /* RegisterViewController.swift */; };
 		9F4604DF1C21086F004EF368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4604DE1C21086F004EF368 /* AppDelegate.swift */; };
 		9F4604E11C21086F004EF368 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4604E01C21086F004EF368 /* ViewController.swift */; };
 		9F4604E41C21086F004EF368 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4604E21C21086F004EF368 /* Main.storyboard */; };
@@ -60,7 +65,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9F1A8CAE1C2174ED00FDE0BC /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
+		9F15C38D1C2364DA0026CC62 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9F15C3961C236D7A0026CC62 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		9F4604DB1C21086F004EF368 /* BidMongol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BidMongol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F4604DE1C21086F004EF368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F4604E01C21086F004EF368 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +145,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F15C3911C2364E70026CC62 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9F15C38D1C2364DA0026CC62 /* LoginViewController.swift */,
+				9F15C3961C236D7A0026CC62 /* RegisterViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		9F4604D21C21086F004EF368 = {
 			isa = PBXGroup;
 			children = (
@@ -163,10 +178,10 @@
 		9F4604DD1C21086F004EF368 /* BidMongol */ = {
 			isa = PBXGroup;
 			children = (
-				9F1A8CAE1C2174ED00FDE0BC /* 11.png */,
 				9F4604DE1C21086F004EF368 /* AppDelegate.swift */,
 				9F4604E01C21086F004EF368 /* ViewController.swift */,
 				9F4604E21C21086F004EF368 /* Main.storyboard */,
+				9F15C3911C2364E70026CC62 /* ViewController */,
 				9F4604E51C21086F004EF368 /* Assets.xcassets */,
 				9F4604E71C21086F004EF368 /* LaunchScreen.storyboard */,
 				9F4604EA1C21086F004EF368 /* Info.plist */,
@@ -318,7 +333,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F4604E91C21086F004EF368 /* LaunchScreen.storyboard in Resources */,
-				9F1A8CAF1C2174ED00FDE0BC /* 11.png in Resources */,
 				9F4604E61C21086F004EF368 /* Assets.xcassets in Resources */,
 				9F4604E41C21086F004EF368 /* Main.storyboard in Resources */,
 			);
@@ -345,8 +359,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F15C38E1C2364DA0026CC62 /* LoginViewController.swift in Sources */,
 				9F4604E11C21086F004EF368 /* ViewController.swift in Sources */,
 				9F4604DF1C21086F004EF368 /* AppDelegate.swift in Sources */,
+				9F15C3971C236D7A0026CC62 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +370,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F15C3981C236D7A0026CC62 /* RegisterViewController.swift in Sources */,
+				9F15C38F1C2364DA0026CC62 /* LoginViewController.swift in Sources */,
 				9F4604F41C210870004EF368 /* BidMongolTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +380,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F15C3991C236D7A0026CC62 /* RegisterViewController.swift in Sources */,
+				9F15C3901C2364DA0026CC62 /* LoginViewController.swift in Sources */,
 				9F4604FF1C210870004EF368 /* BidMongolUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
