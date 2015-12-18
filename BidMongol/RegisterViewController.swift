@@ -65,7 +65,7 @@ class RegisterViewController: UIViewController,UITextFieldDelegate {
     
     
     func animateTextField(up: Bool) {
-        var movement = (up ? -kbHeight : kbHeight)
+        let movement = (up ? -kbHeight : kbHeight)
         
         UIView.animateWithDuration(0.3, animations: {
             self.view.frame = CGRectOffset(self.view.frame, 0, movement)
