@@ -27,17 +27,13 @@ class RegisterViewController: UIViewController,UITextFieldDelegate {
         
         super.viewDidLoad()
         
-        kbHeight = 100.0;
-        
+        kbHeight = 200.0;
        
         self.passwordTextField.delegate = self
         self.firstNameTextField.delegate = self
         self.lastNameTextField.delegate = self
         self.phone1TextField.delegate = self
         
-        
-
-
         // Do any additional setup after loading the view.
     }
     
