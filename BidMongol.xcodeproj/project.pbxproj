@@ -13,6 +13,42 @@
 		9F15C3971C236D7A0026CC62 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F15C3961C236D7A0026CC62 /* RegisterViewController.swift */; };
 		9F15C3981C236D7A0026CC62 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F15C3961C236D7A0026CC62 /* RegisterViewController.swift */; };
 		9F15C3991C236D7A0026CC62 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F15C3961C236D7A0026CC62 /* RegisterViewController.swift */; };
+		9F40AA1C1C2382160014C332 /* AddOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA1B1C2382160014C332 /* AddOrderViewController.swift */; };
+		9F40AA1D1C2382160014C332 /* AddOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA1B1C2382160014C332 /* AddOrderViewController.swift */; };
+		9F40AA1E1C2382160014C332 /* AddOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA1B1C2382160014C332 /* AddOrderViewController.swift */; };
+		9F40AA201C23822C0014C332 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA1F1C23822C0014C332 /* ProfileViewController.swift */; };
+		9F40AA211C23822C0014C332 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA1F1C23822C0014C332 /* ProfileViewController.swift */; };
+		9F40AA221C23822C0014C332 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA1F1C23822C0014C332 /* ProfileViewController.swift */; };
+		9F40AA241C2382410014C332 /* DriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA231C2382410014C332 /* DriverViewController.swift */; };
+		9F40AA251C2382410014C332 /* DriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA231C2382410014C332 /* DriverViewController.swift */; };
+		9F40AA261C2382410014C332 /* DriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA231C2382410014C332 /* DriverViewController.swift */; };
+		9F40AA281C2383C80014C332 /* OrderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA271C2383C80014C332 /* OrderListViewController.swift */; };
+		9F40AA291C2383C80014C332 /* OrderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA271C2383C80014C332 /* OrderListViewController.swift */; };
+		9F40AA2A1C2383C80014C332 /* OrderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA271C2383C80014C332 /* OrderListViewController.swift */; };
+		9F40AA2C1C2383DC0014C332 /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA2B1C2383DC0014C332 /* OrderDetailViewController.swift */; };
+		9F40AA2D1C2383DC0014C332 /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA2B1C2383DC0014C332 /* OrderDetailViewController.swift */; };
+		9F40AA2E1C2383DC0014C332 /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA2B1C2383DC0014C332 /* OrderDetailViewController.swift */; };
+		9F40AA301C2384100014C332 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA2F1C2384100014C332 /* UserViewController.swift */; };
+		9F40AA311C2384100014C332 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA2F1C2384100014C332 /* UserViewController.swift */; };
+		9F40AA321C2384100014C332 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA2F1C2384100014C332 /* UserViewController.swift */; };
+		9F40AA341C23841D0014C332 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA331C23841D0014C332 /* AdminViewController.swift */; };
+		9F40AA351C23841D0014C332 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA331C23841D0014C332 /* AdminViewController.swift */; };
+		9F40AA361C23841D0014C332 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA331C23841D0014C332 /* AdminViewController.swift */; };
+		9F40AA3C1C2384950014C332 /* ForgotPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA3B1C2384950014C332 /* ForgotPassViewController.swift */; };
+		9F40AA3D1C2384950014C332 /* ForgotPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA3B1C2384950014C332 /* ForgotPassViewController.swift */; };
+		9F40AA3E1C2384950014C332 /* ForgotPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA3B1C2384950014C332 /* ForgotPassViewController.swift */; };
+		9F40AA401C2384B50014C332 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA3F1C2384B50014C332 /* AboutViewController.swift */; };
+		9F40AA411C2384B50014C332 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA3F1C2384B50014C332 /* AboutViewController.swift */; };
+		9F40AA421C2384B50014C332 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA3F1C2384B50014C332 /* AboutViewController.swift */; };
+		9F40AA441C2384CA0014C332 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA431C2384CA0014C332 /* LocationViewController.swift */; };
+		9F40AA451C2384CA0014C332 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA431C2384CA0014C332 /* LocationViewController.swift */; };
+		9F40AA461C2384CA0014C332 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA431C2384CA0014C332 /* LocationViewController.swift */; };
+		9F40AA481C2385090014C332 /* OrderSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA471C2385090014C332 /* OrderSummaryViewController.swift */; };
+		9F40AA491C2385090014C332 /* OrderSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA471C2385090014C332 /* OrderSummaryViewController.swift */; };
+		9F40AA4A1C2385090014C332 /* OrderSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA471C2385090014C332 /* OrderSummaryViewController.swift */; };
+		9F40AA4C1C23853D0014C332 /* UserOrderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA4B1C23853D0014C332 /* UserOrderListViewController.swift */; };
+		9F40AA4D1C23853D0014C332 /* UserOrderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA4B1C23853D0014C332 /* UserOrderListViewController.swift */; };
+		9F40AA4E1C23853D0014C332 /* UserOrderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40AA4B1C23853D0014C332 /* UserOrderListViewController.swift */; };
 		9F4604DF1C21086F004EF368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4604DE1C21086F004EF368 /* AppDelegate.swift */; };
 		9F4604E11C21086F004EF368 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4604E01C21086F004EF368 /* ViewController.swift */; };
 		9F4604E41C21086F004EF368 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4604E21C21086F004EF368 /* Main.storyboard */; };
@@ -67,6 +103,18 @@
 /* Begin PBXFileReference section */
 		9F15C38D1C2364DA0026CC62 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9F15C3961C236D7A0026CC62 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		9F40AA1B1C2382160014C332 /* AddOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddOrderViewController.swift; sourceTree = "<group>"; };
+		9F40AA1F1C23822C0014C332 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9F40AA231C2382410014C332 /* DriverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverViewController.swift; sourceTree = "<group>"; };
+		9F40AA271C2383C80014C332 /* OrderListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListViewController.swift; sourceTree = "<group>"; };
+		9F40AA2B1C2383DC0014C332 /* OrderDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
+		9F40AA2F1C2384100014C332 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		9F40AA331C23841D0014C332 /* AdminViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
+		9F40AA3B1C2384950014C332 /* ForgotPassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPassViewController.swift; sourceTree = "<group>"; };
+		9F40AA3F1C2384B50014C332 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		9F40AA431C2384CA0014C332 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		9F40AA471C2385090014C332 /* OrderSummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderSummaryViewController.swift; sourceTree = "<group>"; };
+		9F40AA4B1C23853D0014C332 /* UserOrderListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserOrderListViewController.swift; sourceTree = "<group>"; };
 		9F4604DB1C21086F004EF368 /* BidMongol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BidMongol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F4604DE1C21086F004EF368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F4604E01C21086F004EF368 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +198,18 @@
 			children = (
 				9F15C38D1C2364DA0026CC62 /* LoginViewController.swift */,
 				9F15C3961C236D7A0026CC62 /* RegisterViewController.swift */,
+				9F40AA1B1C2382160014C332 /* AddOrderViewController.swift */,
+				9F40AA271C2383C80014C332 /* OrderListViewController.swift */,
+				9F40AA2B1C2383DC0014C332 /* OrderDetailViewController.swift */,
+				9F40AA2F1C2384100014C332 /* UserViewController.swift */,
+				9F40AA331C23841D0014C332 /* AdminViewController.swift */,
+				9F40AA231C2382410014C332 /* DriverViewController.swift */,
+				9F40AA1F1C23822C0014C332 /* ProfileViewController.swift */,
+				9F40AA3B1C2384950014C332 /* ForgotPassViewController.swift */,
+				9F40AA3F1C2384B50014C332 /* AboutViewController.swift */,
+				9F40AA431C2384CA0014C332 /* LocationViewController.swift */,
+				9F40AA471C2385090014C332 /* OrderSummaryViewController.swift */,
+				9F40AA4B1C23853D0014C332 /* UserOrderListViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -359,10 +419,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F40AA341C23841D0014C332 /* AdminViewController.swift in Sources */,
+				9F40AA2C1C2383DC0014C332 /* OrderDetailViewController.swift in Sources */,
+				9F40AA301C2384100014C332 /* UserViewController.swift in Sources */,
+				9F40AA201C23822C0014C332 /* ProfileViewController.swift in Sources */,
 				9F15C38E1C2364DA0026CC62 /* LoginViewController.swift in Sources */,
 				9F4604E11C21086F004EF368 /* ViewController.swift in Sources */,
+				9F40AA4C1C23853D0014C332 /* UserOrderListViewController.swift in Sources */,
+				9F40AA1C1C2382160014C332 /* AddOrderViewController.swift in Sources */,
+				9F40AA441C2384CA0014C332 /* LocationViewController.swift in Sources */,
 				9F4604DF1C21086F004EF368 /* AppDelegate.swift in Sources */,
+				9F40AA3C1C2384950014C332 /* ForgotPassViewController.swift in Sources */,
+				9F40AA241C2382410014C332 /* DriverViewController.swift in Sources */,
 				9F15C3971C236D7A0026CC62 /* RegisterViewController.swift in Sources */,
+				9F40AA481C2385090014C332 /* OrderSummaryViewController.swift in Sources */,
+				9F40AA401C2384B50014C332 /* AboutViewController.swift in Sources */,
+				9F40AA281C2383C80014C332 /* OrderListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,9 +442,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F40AA2D1C2383DC0014C332 /* OrderDetailViewController.swift in Sources */,
+				9F40AA311C2384100014C332 /* UserViewController.swift in Sources */,
+				9F40AA251C2382410014C332 /* DriverViewController.swift in Sources */,
 				9F15C3981C236D7A0026CC62 /* RegisterViewController.swift in Sources */,
+				9F40AA491C2385090014C332 /* OrderSummaryViewController.swift in Sources */,
 				9F15C38F1C2364DA0026CC62 /* LoginViewController.swift in Sources */,
+				9F40AA291C2383C80014C332 /* OrderListViewController.swift in Sources */,
+				9F40AA411C2384B50014C332 /* AboutViewController.swift in Sources */,
+				9F40AA4D1C23853D0014C332 /* UserOrderListViewController.swift in Sources */,
+				9F40AA451C2384CA0014C332 /* LocationViewController.swift in Sources */,
+				9F40AA211C23822C0014C332 /* ProfileViewController.swift in Sources */,
 				9F4604F41C210870004EF368 /* BidMongolTests.swift in Sources */,
+				9F40AA351C23841D0014C332 /* AdminViewController.swift in Sources */,
+				9F40AA3D1C2384950014C332 /* ForgotPassViewController.swift in Sources */,
+				9F40AA1D1C2382160014C332 /* AddOrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,9 +464,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F40AA2E1C2383DC0014C332 /* OrderDetailViewController.swift in Sources */,
+				9F40AA321C2384100014C332 /* UserViewController.swift in Sources */,
+				9F40AA261C2382410014C332 /* DriverViewController.swift in Sources */,
 				9F15C3991C236D7A0026CC62 /* RegisterViewController.swift in Sources */,
+				9F40AA4A1C2385090014C332 /* OrderSummaryViewController.swift in Sources */,
 				9F15C3901C2364DA0026CC62 /* LoginViewController.swift in Sources */,
+				9F40AA2A1C2383C80014C332 /* OrderListViewController.swift in Sources */,
+				9F40AA421C2384B50014C332 /* AboutViewController.swift in Sources */,
+				9F40AA4E1C23853D0014C332 /* UserOrderListViewController.swift in Sources */,
+				9F40AA461C2384CA0014C332 /* LocationViewController.swift in Sources */,
+				9F40AA221C23822C0014C332 /* ProfileViewController.swift in Sources */,
 				9F4604FF1C210870004EF368 /* BidMongolUITests.swift in Sources */,
+				9F40AA361C23841D0014C332 /* AdminViewController.swift in Sources */,
+				9F40AA3E1C2384950014C332 /* ForgotPassViewController.swift in Sources */,
+				9F40AA1E1C2382160014C332 /* AddOrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
