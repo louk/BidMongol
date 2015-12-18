@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04C91E721C23AC6200B1DAAE /* AdminEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C91E711C23AC6200B1DAAE /* AdminEditViewController.swift */; };
 		9F15C38E1C2364DA0026CC62 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F15C38D1C2364DA0026CC62 /* LoginViewController.swift */; };
 		9F15C38F1C2364DA0026CC62 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F15C38D1C2364DA0026CC62 /* LoginViewController.swift */; };
 		9F15C3901C2364DA0026CC62 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F15C38D1C2364DA0026CC62 /* LoginViewController.swift */; };
@@ -101,6 +102,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04C91E711C23AC6200B1DAAE /* AdminEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminEditViewController.swift; sourceTree = "<group>"; };
 		9F15C38D1C2364DA0026CC62 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9F15C3961C236D7A0026CC62 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		9F40AA1B1C2382160014C332 /* AddOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddOrderViewController.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				9F40AA431C2384CA0014C332 /* LocationViewController.swift */,
 				9F40AA471C2385090014C332 /* OrderSummaryViewController.swift */,
 				9F40AA4B1C23853D0014C332 /* UserOrderListViewController.swift */,
+				04C91E711C23AC6200B1DAAE /* AdminEditViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 			files = (
 				9F40AA341C23841D0014C332 /* AdminViewController.swift in Sources */,
 				9F40AA2C1C2383DC0014C332 /* OrderDetailViewController.swift in Sources */,
+				04C91E721C23AC6200B1DAAE /* AdminEditViewController.swift in Sources */,
 				9F40AA301C2384100014C332 /* UserViewController.swift in Sources */,
 				9F40AA201C23822C0014C332 /* ProfileViewController.swift in Sources */,
 				9F15C38E1C2364DA0026CC62 /* LoginViewController.swift in Sources */,
