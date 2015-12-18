@@ -11,11 +11,8 @@ import Parse
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var logo: UIImageView!
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
         let order = PFObject(className: "Order")
         
@@ -32,6 +29,8 @@ class ViewController: UIViewController {
             }
         }
         
+        
+
         // Do any additional setup after loading the view, typically from a nib.
     }
 
