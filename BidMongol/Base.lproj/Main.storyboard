@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xSd-gd-0cr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xSd-gd-0cr">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--User Order List View Controller-->
@@ -535,34 +536,6 @@
             </objects>
             <point key="canvasLocation" x="-2316" y="-1396"/>
         </scene>
-        <!--Driver View Controller-->
-        <scene sceneID="lDc-w7-7gv">
-            <objects>
-                <viewController storyboardIdentifier="Home" id="rcF-eT-129" customClass="DriverViewController" customModule="BidMongol" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gi2-Uj-EoT"/>
-                        <viewControllerLayoutGuide type="bottom" id="hha-OQ-x8U"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="KEL-iv-YdX">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Phone number..." translatesAutoresizingMaskIntoConstraints="NO" id="2MI-dy-3d2">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="U4W-Lv-6jO">
-                                <rect key="frame" x="0.0" y="72" width="600" height="528"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pKr-5Y-Np0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2316" y="-2114"/>
-        </scene>
         <!--Login-->
         <scene sceneID="GAG-El-m7L">
             <objects>
@@ -589,6 +562,7 @@
                                 </state>
                                 <connections>
                                     <action selector="signInAction:" destination="4qa-s7-zrk" eventType="touchUpInside" id="uEr-gd-hPc"/>
+                                    <segue destination="BRC-0A-M3m" kind="show" id="J7j-6B-ZaJ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remember me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RzK-zo-1wh">
@@ -739,6 +713,73 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XFg-3a-hBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1622" y="132"/>
+        </scene>
+        <!--Driver-->
+        <scene sceneID="ug6-VV-Eoo">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uvT-zm-W6x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="Driver" title="Driver" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BRC-0A-M3m" customClass="DriverViewController" customModule="BidMongol" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DXK-53-ELu"/>
+                        <viewControllerLayoutGuide type="bottom" id="YLK-Cd-BL2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CDU-ns-4DB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" placeholder="Phone number..." translatesAutoresizingMaskIntoConstraints="NO" id="eyo-cS-p59">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7Eb-2e-vgV">
+                                <rect key="frame" x="0.0" y="72" width="600" height="528"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="len-K4-fRW"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="BSY-ek-RXy">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BSY-ek-RXy" id="Q2v-tz-mV2">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Firstname" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3V-DC-lHR">
+                                                    <rect key="frame" x="23" y="0.0" width="76" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Zipcode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9M-dm-f7q">
+                                                    <rect key="frame" x="494" y="0.0" width="63" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="v9M-dm-f7q" secondAttribute="trailing" constant="35" id="UMr-Jc-aAw"/>
+                                                <constraint firstItem="I3V-DC-lHR" firstAttribute="leading" secondItem="Q2v-tz-mV2" secondAttribute="leadingMargin" constant="15" id="n3a-aq-9U1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eyo-cS-p59" firstAttribute="width" secondItem="7Eb-2e-vgV" secondAttribute="width" id="L9P-36-nxI"/>
+                            <constraint firstAttribute="width" secondItem="7Eb-2e-vgV" secondAttribute="width" id="Ucw-hN-sGM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchTableView" destination="eyo-cS-p59" id="DIa-Rd-TBD"/>
+                        <outlet property="userTableView" destination="7Eb-2e-vgV" id="myH-Yx-X68"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-2373" y="-2203"/>
         </scene>
     </scenes>
 </document>
