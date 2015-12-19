@@ -11,7 +11,8 @@ import Parse
 
 class RegisterViewController: UIViewController,UITextFieldDelegate {
 
-    @IBOutlet weak var userName: UITextField!
+    
+    @IBOutlet var containerView: UIView!
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBOutlet weak var firstNameTextField: UITextField!
@@ -20,6 +21,7 @@ class RegisterViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var phone1TextField: UITextField!
     @IBOutlet weak var phone2TextField: UITextField!
     
+<<<<<<< HEAD
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var emailConfirmTextField: UITextField!
 
@@ -28,15 +30,22 @@ class RegisterViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var CityTextField: UITextField!
     @IBOutlet weak var StateTextField: UITextField!
     @IBOutlet weak var ZipTextField: UITextField!
+=======
+    
+    var kbHeight: CGFloat!
+>>>>>>> origin/master
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
-        self.userName.delegate = self
+        kbHeight = 200.0;
+       
         self.passwordTextField.delegate = self
         self.firstNameTextField.delegate = self
         self.lastNameTextField.delegate = self
         self.phone1TextField.delegate = self
+<<<<<<< HEAD
         self.phone2TextField.delegate = self
         self.emailTextField.delegate = self
         self.emailConfirmTextField.delegate = self
@@ -45,8 +54,47 @@ class RegisterViewController: UIViewController,UITextFieldDelegate {
         self.CityTextField.delegate = self
         self.StateTextField.delegate = self
         self.ZipTextField.delegate = self
+=======
+        
+>>>>>>> origin/master
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(animated:Bool) {
+        super.viewWillAppear(animated)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name: UIKeyboardWillHideNotification, object: nil)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        if let userInfo = notification.userInfo {
+            if let keyboardSize =  (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
+                kbHeight = keyboardSize.height
+                self.animateTextField(true)
+            }
+        }
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        self.animateTextField(false)
+    }
+    
+    
+    func animateTextField(up: Bool) {
+        let movement = (up ? -kbHeight : kbHeight)
+        
+        UIView.animateWithDuration(0.3, animations: {
+            self.view.frame = CGRectOffset(self.view.frame, 0, movement)
+        })
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -67,7 +115,7 @@ class RegisterViewController: UIViewController,UITextFieldDelegate {
         
         let newUser = PFUser()
         
-        newUser.username = userName.text
+        newUser.username = "hello"
 
         newUser.password = passwordTextField.text
         
