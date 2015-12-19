@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xSd-gd-0cr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xSd-gd-0cr">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--User Order List View Controller-->
@@ -123,15 +123,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w14-50-zXY">
                                 <rect key="frame" x="179" y="240" width="109" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-
-                     
-
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yMO-sk-RUn">
                                 <rect key="frame" x="59" y="154" width="229" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -147,15 +143,14 @@
                         <outlet property="StreetTextField" destination="s63-4b-Hp0" id="rC0-UO-0Qa"/>
                         <outlet property="SuiteTextField" destination="gxY-x1-fkV" id="BNq-Up-Vw5"/>
                         <outlet property="ZipTextField" destination="iDk-m2-ghk" id="zhd-r9-MeJ"/>
+                        <outlet property="containerView" destination="8Z4-WI-dG3" id="1iR-4j-Q8m"/>
                         <outlet property="emailConfirmTextField" destination="s63-4b-Hp0" id="XY8-HN-WR9"/>
                         <outlet property="emailTextField" destination="Sar-8E-AR5" id="zFC-D0-X0G"/>
-                        <outlet property="containerView" destination="8Z4-WI-dG3" id="1iR-4j-Q8m"/>
                         <outlet property="firstNameTextField" destination="yMO-sk-RUn" id="YZ6-C3-LPE"/>
                         <outlet property="lastNameTextField" destination="93S-8n-xHa" id="8MO-bR-sKM"/>
                         <outlet property="passwordTextField" destination="qn1-Pg-zSE" id="ZHS-bT-XCx"/>
                         <outlet property="phone1TextField" destination="g9K-Bt-Gn8" id="t5F-Sg-Vh2"/>
                         <outlet property="phone2TextField" destination="w14-50-zXY" id="JM3-JP-u6m"/>
-                        <outlet property="userName" destination="sl7-M8-dRY" id="wND-Qh-fZH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EmR-gD-SiD" userLabel="First Responder" sceneMemberID="firstResponder"/>

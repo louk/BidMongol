@@ -134,7 +134,7 @@ class RegisterViewController: UIViewController,UITextFieldDelegate {
         {
         newUser["email"] = emailTextField.text
         }
-        else  { print("Alert") }
+        else  { print("Alert1") }
         
         
         //3
