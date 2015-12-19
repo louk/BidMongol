@@ -18,11 +18,16 @@ class RegisterViewController: UIViewController,UITextFieldDelegate {
     
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var phone1TextField: UITextField!
+    @IBOutlet weak var phone2TextField: UITextField!
     
-    
-    
-    
-    
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var emailConfirmTextField: UITextField!
+
+    @IBOutlet weak var StreetTextField: UITextField!
+    @IBOutlet weak var SuiteTextField: UITextField!
+    @IBOutlet weak var CityTextField: UITextField!
+    @IBOutlet weak var StateTextField: UITextField!
+    @IBOutlet weak var ZipTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,9 +37,14 @@ class RegisterViewController: UIViewController,UITextFieldDelegate {
         self.firstNameTextField.delegate = self
         self.lastNameTextField.delegate = self
         self.phone1TextField.delegate = self
-        
-        
-
+        self.phone2TextField.delegate = self
+        self.emailTextField.delegate = self
+        self.emailConfirmTextField.delegate = self
+        self.StreetTextField.delegate = self
+        self.SuiteTextField.delegate = self
+        self.CityTextField.delegate = self
+        self.StateTextField.delegate = self
+        self.ZipTextField.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -48,12 +58,10 @@ class RegisterViewController: UIViewController,UITextFieldDelegate {
         return false
     }
     
-    
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
         self.view.endEditing(true)
         super.touchesBegan(touches, withEvent: event)
     }
-    
     
     @IBAction func registerAction(sender: AnyObject) {
         
@@ -63,6 +71,24 @@ class RegisterViewController: UIViewController,UITextFieldDelegate {
 
         newUser.password = passwordTextField.text
         
+        newUser["Fname"] = firstNameTextField.text
+        newUser["Lname"] = lastNameTextField.text
+        newUser["Phone1"] = phone1TextField.text
+        newUser["Phone2"] = phone2TextField.text
+        
+        newUser["Street"] = StreetTextField.text
+        newUser["Unit"] = SuiteTextField.text
+        newUser["City"] = CityTextField.text
+        newUser["State"] = StateTextField.text
+        newUser["Zipcode"] = Int(ZipTextField.text!)
+        
+        if( emailTextField.text == emailConfirmTextField.text)
+        {
+        newUser["email"] = emailTextField.text
+        }
+        else  { print("Alert") }
+        
+        
         //3
         newUser.signUpInBackgroundWithBlock { succeeded, error in
             if (succeeded) {
@@ -71,13 +97,18 @@ class RegisterViewController: UIViewController,UITextFieldDelegate {
                 // self.showErrorView(success)
                 dispatch_async(dispatch_get_main_queue()) {
                     
-                    self.performSegueWithIdentifier("Login", sender: nil)
+                    
+                  //  UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Login")
+                    
+                    //var storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    
+                   // self.performSegueWithIdentifier("Login", sender: nil)
                     
                    // self.performSegueWithIdentifier("signInToNavigation", sender: self)
-                    /*
+                    
                     let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Login")
                     self.presentViewController(viewController, animated: true, completion: nil)
-                    */
+                
                     
                     
                 }

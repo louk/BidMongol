@@ -41,7 +41,7 @@ class LoginViewController: UIViewController {
         var userEmailAddress = userName.text
         userEmailAddress = userEmailAddress!.lowercaseString
         
-        var userPassword = password.text
+        let userPassword = password.text
         
         PFUser.logInWithUsernameInBackground(userEmailAddress!, password:userPassword!) {
             (user: PFUser?, error: NSError?) -> Void in

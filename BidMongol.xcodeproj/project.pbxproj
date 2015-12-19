@@ -201,6 +201,7 @@
 				9F15C38D1C2364DA0026CC62 /* LoginViewController.swift */,
 				9F15C3961C236D7A0026CC62 /* RegisterViewController.swift */,
 				9F40AA1B1C2382160014C332 /* AddOrderViewController.swift */,
+				9F4604E21C21086F004EF368 /* Main.storyboard */,
 				9F40AA271C2383C80014C332 /* OrderListViewController.swift */,
 				9F40AA2B1C2383DC0014C332 /* OrderDetailViewController.swift */,
 				9F40AA2F1C2384100014C332 /* UserViewController.swift */,
@@ -243,7 +244,6 @@
 			children = (
 				9F4604DE1C21086F004EF368 /* AppDelegate.swift */,
 				9F4604E01C21086F004EF368 /* ViewController.swift */,
-				9F4604E21C21086F004EF368 /* Main.storyboard */,
 				9F15C3911C2364E70026CC62 /* ViewController */,
 				9F4604E51C21086F004EF368 /* Assets.xcassets */,
 				9F4604E71C21086F004EF368 /* LaunchScreen.storyboard */,

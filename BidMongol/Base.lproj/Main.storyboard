@@ -87,8 +87,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iDk-m2-ghk">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iDk-m2-ghk">
                                 <rect key="frame" x="186" y="505" width="102" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="gcf-FS-brZ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -128,11 +131,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5g5-5b-3hW">
-                                <rect key="frame" x="59" y="316" width="229" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Street" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s63-4b-Hp0">
                                 <rect key="frame" x="59" y="384" width="229" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -153,15 +151,28 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5g5-5b-3hW">
+                                <rect key="frame" x="59" y="316" width="229" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="msd-L0-Pid"/>
                     <connections>
+                        <outlet property="CityTextField" destination="m2u-q9-Zih" id="coO-QV-R3m"/>
+                        <outlet property="StateTextField" destination="iDk-m2-ghk" id="67t-1H-o3I"/>
+                        <outlet property="StreetTextField" destination="s63-4b-Hp0" id="rC0-UO-0Qa"/>
+                        <outlet property="SuiteTextField" destination="gxY-x1-fkV" id="BNq-Up-Vw5"/>
+                        <outlet property="ZipTextField" destination="iDk-m2-ghk" id="zhd-r9-MeJ"/>
+                        <outlet property="emailConfirmTextField" destination="s63-4b-Hp0" id="XY8-HN-WR9"/>
+                        <outlet property="emailTextField" destination="Sar-8E-AR5" id="zFC-D0-X0G"/>
                         <outlet property="firstNameTextField" destination="yMO-sk-RUn" id="YZ6-C3-LPE"/>
                         <outlet property="lastNameTextField" destination="93S-8n-xHa" id="8MO-bR-sKM"/>
                         <outlet property="passwordTextField" destination="qn1-Pg-zSE" id="ZHS-bT-XCx"/>
                         <outlet property="phone1TextField" destination="g9K-Bt-Gn8" id="t5F-Sg-Vh2"/>
+                        <outlet property="phone2TextField" destination="w14-50-zXY" id="JM3-JP-u6m"/>
                         <outlet property="userName" destination="sl7-M8-dRY" id="wND-Qh-fZH"/>
                     </connections>
                 </viewController>
@@ -673,15 +684,6 @@
                                     <segue destination="4uU-aX-cKS" kind="show" id="85d-dB-Zzc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaB-ZL-e5n">
-                                <rect key="frame" x="79" y="428" width="196" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Register"/>
-                                <connections>
-                                    <action selector="registerAction:" destination="4qa-s7-zrk" eventType="touchUpInside" id="p5G-gE-ahb"/>
-                                    <segue destination="Fxn-Bg-LWZ" kind="show" id="laf-a8-feI"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHO-Yl-Hql">
                                 <rect key="frame" x="13" y="514" width="149" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -709,6 +711,15 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="57Y-RZ-C6P">
                                 <rect key="frame" x="116" y="78" width="89" height="85"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaB-ZL-e5n">
+                                <rect key="frame" x="79" y="428" width="196" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="registerAction:" destination="4qa-s7-zrk" eventType="touchUpInside" id="p5G-gE-ahb"/>
+                                    <segue destination="Fxn-Bg-LWZ" kind="showDetail" id="NOf-IB-TKX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -726,7 +737,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O3n-cf-K17" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1611" y="-651"/>
+            <point key="canvasLocation" x="-1604" y="-651"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fJj-DD-WKN">
