@@ -21,7 +21,7 @@ class RegisterViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var phone1TextField: UITextField!
     @IBOutlet weak var phone2TextField: UITextField!
     
-<<<<<<< HEAD
+
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var emailConfirmTextField: UITextField!
 
@@ -30,10 +30,10 @@ class RegisterViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var CityTextField: UITextField!
     @IBOutlet weak var StateTextField: UITextField!
     @IBOutlet weak var ZipTextField: UITextField!
-=======
+
     
     var kbHeight: CGFloat!
->>>>>>> origin/master
+
     
     override func viewDidLoad() {
         
@@ -45,7 +45,7 @@ class RegisterViewController: UIViewController,UITextFieldDelegate {
         self.firstNameTextField.delegate = self
         self.lastNameTextField.delegate = self
         self.phone1TextField.delegate = self
-<<<<<<< HEAD
+
         self.phone2TextField.delegate = self
         self.emailTextField.delegate = self
         self.emailConfirmTextField.delegate = self
@@ -54,9 +54,9 @@ class RegisterViewController: UIViewController,UITextFieldDelegate {
         self.CityTextField.delegate = self
         self.StateTextField.delegate = self
         self.ZipTextField.delegate = self
-=======
+
         
->>>>>>> origin/master
+
         // Do any additional setup after loading the view.
     }
     
