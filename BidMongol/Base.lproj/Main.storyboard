@@ -103,13 +103,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5g5-5b-3hW">
                                 <rect key="frame" x="59" y="291" width="229" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Street" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s63-4b-Hp0">
                                 <rect key="frame" x="59" y="355" width="229" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -125,18 +123,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w14-50-zXY">
                                 <rect key="frame" x="179" y="240" width="109" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
 
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5g5-5b-3hW">
-                                <rect key="frame" x="59" y="316" width="229" height="30"/>
+                     
 
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yMO-sk-RUn">
                                 <rect key="frame" x="59" y="154" width="229" height="30"/>
-
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -145,7 +142,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="msd-L0-Pid"/>
                     <connections>
-
                         <outlet property="CityTextField" destination="m2u-q9-Zih" id="coO-QV-R3m"/>
                         <outlet property="StateTextField" destination="iDk-m2-ghk" id="67t-1H-o3I"/>
                         <outlet property="StreetTextField" destination="s63-4b-Hp0" id="rC0-UO-0Qa"/>
@@ -153,17 +149,13 @@
                         <outlet property="ZipTextField" destination="iDk-m2-ghk" id="zhd-r9-MeJ"/>
                         <outlet property="emailConfirmTextField" destination="s63-4b-Hp0" id="XY8-HN-WR9"/>
                         <outlet property="emailTextField" destination="Sar-8E-AR5" id="zFC-D0-X0G"/>
-
                         <outlet property="containerView" destination="8Z4-WI-dG3" id="1iR-4j-Q8m"/>
-
                         <outlet property="firstNameTextField" destination="yMO-sk-RUn" id="YZ6-C3-LPE"/>
                         <outlet property="lastNameTextField" destination="93S-8n-xHa" id="8MO-bR-sKM"/>
                         <outlet property="passwordTextField" destination="qn1-Pg-zSE" id="ZHS-bT-XCx"/>
                         <outlet property="phone1TextField" destination="g9K-Bt-Gn8" id="t5F-Sg-Vh2"/>
-
                         <outlet property="phone2TextField" destination="w14-50-zXY" id="JM3-JP-u6m"/>
                         <outlet property="userName" destination="sl7-M8-dRY" id="wND-Qh-fZH"/>
-
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EmR-gD-SiD" userLabel="First Responder" sceneMemberID="firstResponder"/>
