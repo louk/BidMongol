@@ -49,11 +49,7 @@ class DriverViewController: UIViewController, UITableViewDelegate,UITableViewDat
         
         let object:PFObject = self.items[indexPath.row]
         
-        
-        
-        
-    
-        
+
         if let usernameTxt = object.objectForKey("Fname") as? String {
             firstName.text = usernameTxt
         }
@@ -69,12 +65,16 @@ class DriverViewController: UIViewController, UITableViewDelegate,UITableViewDat
             zipCode.text = "No value"
         }
         
-        
-        
-        
         return cell
         
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let selectedItem:PFObject = self.items[indexPath.row]
+        
+    }
+    
     
     
     
