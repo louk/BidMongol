@@ -14,9 +14,9 @@ class DriverViewController: UIViewController, UITableViewDelegate,UITableViewDat
     @IBOutlet weak var searchTableView: UISearchBar!
     @IBOutlet weak var userTableView: UITableView!
     
-    var mutableArray:NSMutableArray? = NSMutableArray()
+    var userListArray:NSMutableArray? = NSMutableArray()
     
-    var myArray = ["Steve", "Bill", "Linus", "Bret"]
+    var items: [PFObject] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,18 +37,41 @@ class DriverViewController: UIViewController, UITableViewDelegate,UITableViewDat
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int)-> Int {
-        print("%d",self.mutableArray!.count)
-        return self.myArray.count
+
+        return self.items.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
         
-        let firstName : UILabel = cell.viewWithTag(1) as! UILabel;
-        let zipCode : UILabel = cell.viewWithTag(2) as! UILabel;
-       // firstName.text = self.myArray.objectAtIndex(indexPath.row) as? String
-        print(firstName.text)
-        print(self.mutableArray!.objectAtIndex(indexPath.row) as? String)
+        let firstName : UILabel = cell.viewWithTag(1) as! UILabel
+        let zipCode : UILabel = cell.viewWithTag(2) as! UILabel
+        
+        let object:PFObject = self.items[indexPath.row]
+        
+        
+        
+        
+    
+        
+        if let usernameTxt = object.objectForKey("Fname") as? String {
+            firstName.text = usernameTxt
+        }
+        else {
+            zipCode.text = "No value"
+        }
+        
+
+        if let zipcodeTxt = object.objectForKey("Zipcode") as? Int {
+            zipCode.text = String(zipcodeTxt)
+        }
+        else {
+            zipCode.text = "No value"
+        }
+        
+        
+        
+        
         return cell
         
     }
@@ -65,18 +88,16 @@ class DriverViewController: UIViewController, UITableViewDelegate,UITableViewDat
             if !(error != nil) {
                 for(var i=0;i<objects!.count;i++){
                     let object=objects![i] ;
-                    let name = object.objectForKey("username") as! String;
                     
-                   // self.mutableArray!.addObject(name)
-            
-                    print(name)
-                    
+                    self.items.append(object)
                 }
+                
+                print(self.items)
+                
+                self.userTableView.reloadData()
             }
         }
        
-        print(self.mutableArray)
-        userTableView.reloadData()
     }
     
     
